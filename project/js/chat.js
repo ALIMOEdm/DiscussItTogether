@@ -245,7 +245,8 @@ function drawMage(src){
 
 document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
-var socket = io.connect('http://watchittogether:9091');
+//var socket = io.connect('http://watchittogether:9091');
+var socket = io.connect('http://talk.we22.ru:9091');
 socket.on('hello', function (data) {
     console.log(data);
 });
