@@ -8,7 +8,8 @@ var def_color = "FFFF00";
 
 var mouseDown = false, mouseUp = false, mouseMove = false;
 var isClose = false, isStart = false;;
-
+var isFirst = true;
+var curMiniImageWr;
 
 //Нормализация событий
 function normaliseEvent(event) {
@@ -39,13 +40,19 @@ function normaliseEvent(event) {
     return event;
 }
 //выбор цвета
-document.getElementById("color_panel").addEventListener("click",function(event){
-    event = event || window.event;
-    event = normaliseEvent(event);
-    var src = event.target;
-    window.def_color = src.getAttribute("color");
+//document.getElementById("color_panel").addEventListener("click",function(event){
+//    event = event || window.event;
+//    event = normaliseEvent(event);
+//    var src = event.target;
+//    window.def_color = src.getAttribute("color");
+//    window.ctx.beginPath();
+//});
+
+function setColor(el){
+    console.dir(el.value);
+    window.def_color = el.value;
     window.ctx.beginPath();
-});
+}
 
 document.getElementById("LineTest").onclick = function(){
     document.getElementById("test_canvas").onmousedown = mousedown_Line;
@@ -74,7 +81,7 @@ function mousemove_Line(event){
     if(mouseDown){
         isClose = false;
         window.ctx.lineWidth = 5;
-        window.ctx.strokeStyle = "#"+window.def_color;
+        window.ctx.strokeStyle = window.def_color;
         var moveX2 = event.offsetX;
         var moveY2 = event.offsetY;
         window.ctx.moveTo(moveX1, moveY1);
@@ -144,7 +151,7 @@ function mousedown_Rect(event){
 function mouseup_Rect(event){
     //console.dir(event);
     console.log("mouseup_Rect");
-    window.ctx.strokeStyle = '#'+window.def_color;
+    window.ctx.strokeStyle = window.def_color;
     window.ctx.strokeRect(x1, y1, event.offsetX-x1, event.offsetY-y1);
     var transfer_date = {
         x1 : x1,
@@ -156,6 +163,13 @@ function mouseup_Rect(event){
     socket.emit('drawRect', transfer_date);
 }
 
+function changeImage(event){
+    event = event || window.event;
+    event = normaliseEvent(event);
+    window.curMiniImageWr = event.target;
+    jQuery("#files").trigger("click");
+}
+
 function handleFileSelect(evt){
     var files = evt.target.files;
     console.log(files)
@@ -164,8 +178,9 @@ function handleFileSelect(evt){
 
     reader.onload = (function(theFile){
         return function(e){
-            console.info(e.target.result);
+            //console.info(e.target.result);
 //            document.getElementById("photo_im").src = e.target.result;
+            curMiniImageWr.src = e.target.result;
             socket.emit('image', e.target.result);
             drawMage(e.target.result);
         }
@@ -189,9 +204,22 @@ function drawMage(src){
 
 document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
-var socket = io.connect('http://talk.we22.ru:9091');
+var socket = io.connect('http://watchittogether:9091');
 socket.on('hello', function (data) {
     console.log(data);
+});
+
+var find_ob = {};
+find_ob.act = "find";
+sendSocket("findOther", find_ob);
+
+socket.on("findOther", function(data){
+    console.log(data, isFirst, "findOther");
+    if(isFirst){
+        if(window.ctx != undefined && data.find_other.act == "find"){
+            sendSocket("remoutFirstSett", {src : document.getElementById("test_canvas").toDataURL()})
+        }
+    }
 });
 
 socket.on('image', function(data){
@@ -201,7 +229,7 @@ socket.on('image', function(data){
 socket.on('drawRect', function(data){
     console.log('drawRect', data);
     var c = data.rectCoords;
-    window.ctx.strokeStyle = '#'+c.color;
+    window.ctx.strokeStyle = c.color;
     window.ctx.strokeRect(c.x1, c.y1, c.x2, c.y2);
 });
 
@@ -214,7 +242,7 @@ socket.on("drowPometki", function(data){
                 window.ctx.beginPath();
             }
             window.ctx.lineWidth = c.lineWidth;
-            window.ctx.strokeStyle = "#"+ c.color;
+            window.ctx.strokeStyle = c.color;
 
             window.ctx.moveTo(c.X1, c.Y1);
             window.ctx.lineTo(c.X2, c.Y2);
@@ -225,3 +253,10 @@ socket.on("drowPometki", function(data){
             break;
     }
 });
+
+socket.on("remoutFirstSett", function(data){
+    console.info("remoutFirstSett");
+    isFirst = false;
+    drawMage(data.remoutFirstSett.src);
+});
+

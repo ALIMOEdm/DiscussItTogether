@@ -2,36 +2,55 @@
 <html>
 <head>
     <title></title>
-    <link rel='stylesheet' href='/css/style.css'/>
+    <link rel='stylesheet' href='css/style.css'/>
+    <link rel='stylesheet' href='css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='css/font-awesome.min.css'/>
 </head>
 <body>
 <div id='content'>
-    <input type="file" id="files" name="files[]"/>
-    <div id="photo">
-        <img src="" id="photo_im" alt=""/>
-    </div>
-    <canvas id="test_canvas"  width="1000" height="1000"></canvas>
-</div>
-
-<div style="position: fixed; top: 20%; left: 80%;">
-    <div id="instrumentPanel">
-        <div id="RectTest" style="padding: 10px;display: inline-block; border: 2px solid red;width:20px;"></div>
-        <div id="LineTest" style="padding: 10px 0;display: inline-block; width:40px;">
-            <div style="background-color: red; height: 3px;"></div>
+    <div class="row">
+        <div class="col-xs-6 col-md-3" style="width: 10%;">
+            <a onclick="changeImage(event); return false;" href="#" class="thumbnail">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" data-src="" alt="...">
+            </a>
         </div>
     </div>
-    <div id="color_panel" style="margin: 10px 2px;">
-        <div color="006600" style="padding: 10px; width:20px;background-color: #006600"></div>
-        <div color="cc0000" style="padding: 10px; width:20px;background-color: #cc0000"></div>
-        <div color="00d6b2" style="padding: 10px; width:20px;background-color: #00d6b2"></div>
+
+    <div style="width:1100px;margin: 20px auto;">
+        <input style="display: none;" type="file" id="files" name="files[]"/>
+        <canvas id="test_canvas"  width="1000" height="1000"></canvas>
     </div>
 </div>
+
+<div class="" style="position: fixed; top: 40%; left: 95%; width: 5%;">
+    <div style="width: 100%;" class="btn-group-vertical">
+        <button id="RectTest" type="button" class="btn btn-default">
+            <i class="fa fa-pencil-square-o"></i>
+        </button>
+        <button id="LineTest" type="button" class="btn btn-default">
+            <i class="fa fa-pencil"></i>
+        </button>
+        <button id="TextTest" type="button" class="btn btn-default">
+            <i class="fa fa-font"></i>
+        </button>
+        <button id="VoiceTest" type="button" class="btn btn-default">
+            <i class="fa fa-microphone"></i>
+        </button>
+    </div>
+
+    <div  class="work_panel-changecolor" id="color_panel" style="margin: 10px 2px;">
+        <form role="form" onsubmit="return false;">
+            <input onchange="setColor(this)" class="form-control" type="color" name="bg" value="#ff0000">
+        </form>
+    </div>
+</div>
+
 <script>
 
 </script>
-
-<script src="js/socket.io.js"></script>
 <script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/socket.io.js"></script>
 <script src='js/chat.js' type='text/javascript'></script>
 <script src='js/chat_ui.js' type='text/javascript'></script>
 </body>

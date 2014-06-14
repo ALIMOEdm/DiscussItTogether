@@ -23,4 +23,12 @@ io.on('connection', function(socket){
         console.log("drowPometki");
         socket.broadcast.emit('drowPometki', {line : data});
     });
+    socket.on('findOther', function(data){
+        console.log("findOther");
+        socket.broadcast.emit('findOther', {find_other : data});
+    });
+    socket.on('remoutFirstSett', function(data){
+        console.log("remoutFirstSett");
+        socket.broadcast.emit('remoutFirstSett', {remoutFirstSett : data});
+    });
 });

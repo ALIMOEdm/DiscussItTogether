@@ -2,23 +2,20 @@ body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-a {
-    color: #00B7FF;
+.work_panel-actiontype > div{
+    margin-top: 3px;
+    border: 1px solid #000000;
 }
-#content {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+
+.work_panel-actiontype > div:hover{
+    cursor:pointer;
+    outline: 2px solid #ffc520;
 }
-#room {
-    background-color: #ddd;
-    margin-bottom: 1em;
+.work_panel{
+    padding: 0;
+    background-color: #cccccc;
 }
-#messages {
-    width: 690px;
-    height: 300px;
-    overflow: auto;
-    background-color: #eee;
-    margin-bottom: 1em;
-    margin-right: 10px;
+
+.active{
+
 }
