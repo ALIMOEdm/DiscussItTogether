@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>DIT Service</title>
     <link rel='stylesheet' href='css/style.css'/>
     <link rel='stylesheet' href='css/bootstrap.min.css'/>
     <link rel='stylesheet' href='css/font-awesome.min.css'/>
 </head>
-<body>
-<div id='content'>
-    <div class="row">
-        <div class="col-xs-6 col-md-3" style="width: 10%;">
-            <a onclick="changeImage(event); return false;" href="#" class="thumbnail">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" data-src="" alt="...">
-            </a>
-        </div>
-    </div>
+<body style="margin: 0;background-color: rgb(229, 243, 255); padding: 0;">
 
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="row">
+                <div class="col-xs-6 col-md-3" style="width: 10%;">
+                    <a onclick="changeImage(event); return false;" href="#" class="thumbnail" style="margin-bottom: 5px;margin-to: 5px;">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" data-src="" alt="...">
+                    </a>
+                </div>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id='content' style="padding: 0 80px;">
     <div style="width:1100px;margin: 20px auto;">
         <input style="display: none;" type="file" id="files" name="files[]"/>
-        <canvas id="test_canvas"  width="1000" height="1000"></canvas>
+        <canvas style="box-shadow: 0 0 4px 4px rgb(158, 158, 158);" id="test_canvas"  width="1000"></canvas>
     </div>
 </div>
 

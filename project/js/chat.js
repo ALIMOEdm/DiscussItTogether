@@ -11,6 +11,9 @@ var isClose = false, isStart = false;;
 var isFirst = true;
 var curMiniImageWr;
 
+
+var countSaves = 10, currentSaveStep = 0, saveStepsNumber = 0;//количество возможных сохранений, текущее сохранение, количество сделанных сохранений
+
 //Нормализация событий
 function normaliseEvent(event) {
     if (!event.stopPropagation) {
@@ -96,6 +99,7 @@ function mousemove_Line(event){
         ob.Y2 = moveY2;
         if(isStart){
             ob.act = "start";
+            isStart = false;
         }
         else{
             ob.act = "continue";
@@ -189,15 +193,52 @@ function handleFileSelect(evt){
     reader.readAsDataURL(f);
 }
 
+
+function saveImageFunction(path, data){
+    var fullPath = location.href + "/" + path;
+    var save_img = localStorage.getItem(fullPath);
+    var save_img_arr = [];
+    if(save_img != undefined && !isNull(save_img)){
+        save_img_arr = JSON.parse(save_img);
+    }
+    save_img_arr[saveStepsNumber] = data;
+
+    currentSaveStep++;
+    saveStepsNumber++;
+    if(saveStepsNumber > countSaves){
+        saveStepsNumber = 0;
+    }
+    localStorage.setItem(fullPath, JSON.stringify(save_img_arr));
+}
+
+function getSaveImg(path, isBackOrAhead){
+    var fullPath = location.href + "/" + path;
+    var save_img = localStorage.getItem(fullPath);
+    if(save_img == undefined ||  isNull(save_img)){
+        return -1;
+    }
+    var save_img_arr = []
+    save_img_arr = JSON.parse(save_img);
+    var res = save_img_arr[currentSaveStep];
+    currentSaveStep--;
+
+}
+
 function drawMage(src){
     window.canvas = document.getElementById("test_canvas"),
         window.ctx = canvas.getContext('2d'),
         window.pic = new Image();
     pic.src = src;
-    document.getElementById("test_canvas").width = pic.width;
-    document.getElementById("test_canvas").heifht = pic.height;
+    if(pic.width > window.canvas.width){
+        var koef = pic.width / window.canvas.width;
+        pic.width = window.canvas.width;
+        pic.height = pic.height/koef;
+    }
+    window.canvas.width = pic.width;
+    window.canvas.height = pic.height;
+    console.dir(window.canvas);
     pic.onload = function(){
-        ctx.drawImage(pic, 0, 0);
+        ctx.drawImage(pic, 0, 0, pic.width, pic.height);
     }
 
 }
