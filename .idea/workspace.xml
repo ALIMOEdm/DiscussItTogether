@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcc1a427-b36b-4819-b1ad-6eed7ed52faa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/js/chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/chat_server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/js/chat_ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/js/socket.io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/www.iml" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\.idea\we22.lc.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\adminer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Ajaxer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Catalog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Darts\Darts.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Page.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Template\Common.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Template\CommonAuthorized.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Users\Account.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Controller\Welcome.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\CatalogCategory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\CatalogItem.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\Image.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\Profiles.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\User.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\Vote.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\classes\Model\VoteChoice.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\config\auth.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\config\database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\config\email.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\config\ulogin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\i18n\ru.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\logs\2014\04\10.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\logs\2014\04\11.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\logs\2014\04\22.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\logs\2014\04\23.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\logs\2014\04\25.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\catalog\category.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\catalog\item.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\catalog\view.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\darts\mainview.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\page\angular.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\page\home.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\page\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\template\common.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\template\common_auth.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\template\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\template\header.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\users\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\users\login.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\application\views\users\registration.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\logs\site-access_log" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\logs\site-error_log" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\classes\Auth.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\classes\Auth\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\classes\Kohana\Auth.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\classes\Kohana\Auth\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\config\auth.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\guide\auth\config.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\guide\auth\driver\develop.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\guide\auth\driver\file.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\guide\auth\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\guide\auth\login.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\auth\guide\auth\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Apc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Arithmetic.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\GarbageCollect.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Memcache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\MemcacheTag.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Sqlite.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Tagging.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Cache\Wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\HTTP\Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Apc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Arithmetic.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\GarbageCollect.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Memcache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\MemcacheTag.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Sqlite.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Tagging.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\Cache\Wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\classes\Kohana\HTTP\Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\config\cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\guide\cache.usage.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\guide\cache\config.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\guide\cache\examples.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\guide\cache\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\guide\cache\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\guide\cache\usage.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\CacheBasicMethodsTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\CacheTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\FileTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\SqliteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\WincacheTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\arithmetic\ApcTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\arithmetic\CacheArithmeticMethods.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\arithmetic\MemcacheTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\cache\request\client\CacheTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\cache\tests\phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\classes\Catalog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\classes\Kohana\Catalog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\config\catalog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\views\catalog-adminlist.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\views\catalog-list.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\views\catalog-top.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\catalog\views\catalog-view.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\ArrCallback.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\AutoLinkEmails.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\DateSpan.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\ExplodeLimit.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\GruberURL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\LtrimDigits.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\MDDoBaseURL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\MDDoImageURL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\MDDoIncludeViews.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\StripNullBytes.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\Transliterate.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\URLSite.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\UserFuncArray.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\ValidColor.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Bench\ValidURL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Codebench.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Controller\Codebench.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\classes\Kohana\Codebench.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\config\codebench.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\guide\codebench\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\guide\codebench\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\init.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\media\guide\codebench\codebench_screenshot1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\media\guide\codebench\codebench_screenshot2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\codebench\views\codebench.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Config\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Config\Database\Reader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Config\Database\Writer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\DB.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Expression.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\MySQL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\MySQL\Result.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\PDO.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder\Delete.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder\Insert.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder\Join.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder\Select.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder\Update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Query\Builder\Where.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Result.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Database\Result\Cached.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Config\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Config\Database\Reader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Config\Database\Writer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\DB.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Expression.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\MySQL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\MySQL\Result.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\PDO.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder\Delete.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder\Insert.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder\Join.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder\Select.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder\Update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Query\Builder\Where.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Result.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Database\Result\Cached.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Model\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Kohana\Session\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Model\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\classes\Session\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\config\database.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\config\session.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\config.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\examples.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\query.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\query\builder.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\query\parameterized.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\database\guide\database\results.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\classes\Email.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\config\email.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Attachment.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\ByteStream\AbstractFilterableInputStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\ByteStream\ArrayByteStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\ByteStream\FileByteStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterReader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterReaderFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterReaderFactory\SimpleCharacterReaderFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterReader\GenericFixedWidthReader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterReader\UsAsciiReader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterReader\Utf8Reader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\CharacterStream\ArrayCharacterStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\DependencyContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\DependencyException.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\EmbeddedFile.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Encoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Encoder\Base64Encoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Encoder\QpEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Encoder\Rfc2231Encoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Encoding.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\CommandEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\CommandListener.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\Event.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\EventDispatcher.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\EventListener.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\EventObject.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\ResponseEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\ResponseListener.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\SendEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\SendListener.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\SimpleEventDispatcher.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\TransportChangeEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\TransportChangeListener.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\TransportExceptionEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Events\TransportExceptionListener.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\FailoverTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\FileStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Filterable.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Image.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\InputByteStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\IoException.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\KeyCache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\KeyCache\ArrayKeyCache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\KeyCache\DiskKeyCache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\KeyCache\KeyCacheInputStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\KeyCache\NullKeyCache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\KeyCache\SimpleKeyCacheInputStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\LoadBalancedTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\MailTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mailer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mailer\ArrayRecipientIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mailer\RecipientIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Message.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\MimePart.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Attachment.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\CharsetObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\ContentEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\ContentEncoder\Base64ContentEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\ContentEncoder\PlainContentEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\ContentEncoder\QpContentEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\EmbeddedFile.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\EncodingObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Header.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\HeaderEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\HeaderEncoder\Base64HeaderEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\HeaderEncoder\QpHeaderEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\HeaderFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\HeaderSet.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\AbstractHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\DateHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\IdentificationHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\MailboxHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\ParameterizedHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\PathHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Headers\UnstructuredHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\Message.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\MimeEntity.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\MimePart.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\ParameterizedHeader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\SimpleHeaderFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\SimpleHeaderSet.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\SimpleMessage.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Mime\SimpleMimeEntity.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\OutputByteStream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\AntiFloodPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\BandwidthMonitorPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\DecoratorPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Decorator\Replacements.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Logger.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\LoggerPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Loggers\ArrayLogger.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Loggers\EchoLogger.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\PopBeforeSmtpPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Pop\Pop3Connection.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Pop\Pop3Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Reporter.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\ReporterPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Reporters\HitReporter.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Reporters\HtmlReporter.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Sleeper.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\ThrottlerPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Plugins\Timer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Preferences.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\ReplacementFilterFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\RfcComplianceException.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\SendmailTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\SmtpTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\StreamFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\StreamFilters\ByteArrayReplacementFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\StreamFilters\StringReplacementFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\StreamFilters\StringReplacementFilterFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\SwiftException.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\TransportException.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\AbstractSmtpTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\EsmtpHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\EsmtpTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\Esmtp\AuthHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\Esmtp\Auth\CramMd5Authenticator.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\Esmtp\Auth\LoginAuthenticator.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\Esmtp\Auth\PlainAuthenticator.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\Esmtp\Authenticator.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\FailoverTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\IoBuffer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\LoadBalancedTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\MailInvoker.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\MailTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\SendmailTransport.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\SimpleMailInvoker.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\SmtpAgent.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\classes\Swift\Transport\StreamBuffer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\dependency_maps\cache_deps.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\dependency_maps\mime_deps.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\dependency_maps\transport_deps.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\mime_types.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\preferences.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\swift_init.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\email\vendor\swift\swift_required.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\classes\Image.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\classes\Image\GD.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\classes\Image\Imagick.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\classes\Kohana\Image.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\classes\Kohana\Image\GD.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\classes\Kohana\Image\Imagick.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\examples.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\examples\crop.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\examples\dynamic.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\examples\upload.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\guide\image\using.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\crop_form.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\crop_orig.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\crop_result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\dynamic-400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\dynamic-600.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\upload_form.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\media\guide\image\upload_result.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\tests\kohana\ImageTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\image\tests\test_data\test_image" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Kohana\Minion\CLI.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Kohana\Minion\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Kohana\Minion\Exception\InvalidTask.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Kohana\Minion\Task.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Minion\CLI.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Minion\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Minion\Exception\InvalidTask.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Minion\Task.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\classes\Task\Help.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\guide\minion\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\guide\minion\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\guide\minion\setup.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\guide\minion\tasks.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\messages\validation.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\minion" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\miniond" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\tests\minion\TaskTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\views\minion\error\validation.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\views\minion\help\error.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\views\minion\help\list.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\minion\views\minion\help\task.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\auth-schema-mysql.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\auth-schema-postgresql.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Auth\ORM.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Kohana\Auth\ORM.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Kohana\ORM.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Kohana\ORM\Validation\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Model\Auth\Role.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Model\Auth\User.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Model\Auth\User\Token.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Model\Role.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Model\User.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\Model\User\Token.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\ORM.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\classes\ORM\Validation\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\examples.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\examples\simple.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\examples\validation.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\filters.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\models.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\relationships.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\tutorials.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\upgrading.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\using.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\orm\guide\orm\validation.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\bootstrap_all_modules.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Kohana\Unittest\Database\TestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Kohana\Unittest\Helpers.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Kohana\Unittest\TestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Kohana\Unittest\TestSuite.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Kohana\Unittest\Tests.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Unittest\Database\TestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Unittest\Helpers.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Unittest\TestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Unittest\TestSuite.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\classes\Unittest\Tests.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\config\unittest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\example.phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\guide\unittest\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\guide\unittest\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\guide\unittest\mockobjects.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\guide\unittest\testing.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\guide\unittest\testing_workflows.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\guide\unittest\troubleshooting.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\unittest\tests.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Controller\Userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc\Class.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc\Markdown.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc\Method.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc\Method\Param.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc\Missing.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kodoc\Property.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Controller\Userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc\Class.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc\Markdown.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc\Method.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc\Method\Param.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc\Missing.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\classes\Kohana\Kodoc\Property.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\de-de\about.conventions.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\de-de\about.kohana.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\developers.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\adding.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\config.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\contributing.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\markdown.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\modules.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\using.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\guide\userguide\works.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\init.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\api.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\kodoc.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\css\shThemeKodoc.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\breadcrumbs.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\content.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\ext_link.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\h2_line.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\h3_line.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\header.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\kohana.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\lightbulb_48.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\lines.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\orange-tab.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\img\wrapper.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\js\jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\js\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\js\kodoc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\js\shBrushPhp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\js\shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\js\sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\userguide\contrib-github-edit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\userguide\contrib-github-fork.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\media\guide\userguide\contrib-github-pull.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\messages\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\tests\KodocTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\tests\userguide\ControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\vendor\markdown\License.text" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\vendor\markdown\markdown.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\api\class.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\api\menu.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\api\method.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\api\tags.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\api\toc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\error.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\examples\error.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\examples\hello_world_error.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\menu.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\page-toc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\modules\userguide\views\userguide\template.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\nbproject\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\nbproject\project.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\angular\todo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\colorbox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\darts\game_type.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\images\border.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\images\controls.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\images\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\images\loading_background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\images\overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\futurademic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\futurademic.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\futurademic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\futurademic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\spaceage.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\fonts\spaceage.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\dart1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\darts\fifa.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\darts\tournament.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\darts\tournament.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\pics\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\pics\Untitled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\pics\drawing2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\pics\mini\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\pics\mini\Untitled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\pics\mini\drawing2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\img\theme\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular-animate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular-cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular-resource.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular-route.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular-sanitize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular-touch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\angular\todo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\CHANGES.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\adapters\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\build-config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\contents.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ka.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ku.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\ug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\about\dialogs\about.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\about\dialogs\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\clipboard\dialogs\paste.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\dialog\dialogDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\fakeobjects\images\spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\icons_hidpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\link\dialogs\anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\link\dialogs\link.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\link\images\anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\link\images\hidpi\anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\dialogs\table.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\icons\hidpi\table.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\icons\table.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ka.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ku.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\ug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\table\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\tabletools\dialogs\tableCell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\tabletools\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\images\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\plugins\youtube\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\api.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\appendto.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\assets\inlineall\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\assets\outputxhtml\outputxhtml.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\assets\posteddata.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\assets\sample.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\assets\sample.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\assets\uilanguages\languages.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\datafiltering.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\divreplace.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\inlineall.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\inlinebycode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\inlinetextarea.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\jquery.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\plugins\dialog\assets\my_dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\plugins\dialog\dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\plugins\enterkey\enterkey.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\plugins\toolbar\toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\plugins\wysiwygarea\fullpage.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\readonly.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\replacebyclass.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\replacebycode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\sample.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\sample.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\sample_posteddata.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\tabindex.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\uicolor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\uilanguages.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\samples\xhtmlstyle.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\dialog_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\dialog_ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\dialog_ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\dialog_iequirks.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\dialog_opera.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\editor_gecko.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\editor_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\editor_ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\editor_ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\editor_iequirks.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\icons_hidpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\hidpi\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\hidpi\lock-open.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\hidpi\lock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\hidpi\refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\lock-open.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\lock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\images\refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\skins\moono\readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\ckeditor\styles.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\colorbox.ai" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\colorbox.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\daisy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\daisy@2x.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\homer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\marylou.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\ohoopee1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\ohoopee2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\content\ohoopee3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-gr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-kr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\i18n\jquery.colorbox-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\jquery.colorbox-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\colorbox\jquery.colorbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\darts\change_game_controller.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\darts\game_logic_kubok.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\darts\help_function.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\darts\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\jquery-1.11.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\jquery.ui.datepicker-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\js\scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\templates\darts\game.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\templates\darts\gameleague.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\templates\darts\selectgametype.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\public_files\templates\darts\tournament_setting.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Arr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Config.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Config\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Config\Group.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Controller\Template.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Cookie.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Date.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Debug.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Encrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Feed.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Form.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Fragment.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\300.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\301.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\302.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\303.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\304.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\305.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\307.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\400.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\401.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\402.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\403.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\404.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\405.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\406.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\407.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\408.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\409.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\410.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\411.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\412.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\413.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\414.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\415.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\416.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\417.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\500.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\501.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\502.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\503.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\504.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\505.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\Expected.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Exception\Redirect.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Header.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Message.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Request.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\HTTP\Response.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\I18n.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Inflector.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Arr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config\File\Reader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config\Group.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config\Reader.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config\Source.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Config\Writer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Controller\Template.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Cookie.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Core.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Date.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Debug.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Encrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Feed.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Form.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Fragment.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\300.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\301.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\302.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\303.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\304.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\305.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\307.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\400.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\401.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\402.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\403.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\404.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\405.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\406.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\407.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\408.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\409.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\410.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\411.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\412.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\413.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\414.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\415.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\416.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\417.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\500.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\501.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\502.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\503.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\504.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\505.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\Expected.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Exception\Redirect.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Header.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Message.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Request.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\HTTP\Response.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\I18n.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Inflector.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Kohana\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Log.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Log\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Log\StdErr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Log\StdOut.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Log\Syslog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Log\Writer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Model.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Num.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client\Curl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client\External.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client\HTTP.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client\Internal.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client\Recursion\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Client\Stream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Request\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Response.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Route.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Security.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Session.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Session\Cookie.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Session\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Session\Native.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Text.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\URL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\UTF8.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\UTF8\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Upload.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Valid.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Validation.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\Validation\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\View.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Kohana\View\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Log.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Log\File.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Log\StdErr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Log\StdOut.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Log\Syslog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Log\Writer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Model.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Num.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client\Curl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client\External.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client\HTTP.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client\Internal.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client\Recursion\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Client\Stream.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Request\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Response.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Route.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Security.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Session.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Session\Cookie.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Session\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Session\Native.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Text.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\URL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\UTF8.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\UTF8\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Upload.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Valid.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Validation.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\Validation\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\View.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\classes\View\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\credit_cards.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\curl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\encrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\inflector.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\mimes.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\session.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\user_agents.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\config\userguide.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\autoloading.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\bootstrap.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\config.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\controllers.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\conventions.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\cookies.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\debugging.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\errors.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\extension.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\files.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\files\classes.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\files\config.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\files\i18n.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\files\messages.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\flow.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\fragments.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\helpers.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\index.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\install.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\menu.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\modules.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\mvc.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\mvc\controllers.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\mvc\models.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\mvc\views.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\profiling.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\requests.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\routing.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security\cookies.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security\database.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security\deploying.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security\encryption.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security\validation.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\security\xss.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\sessions.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tips.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\clean-urls.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\error-pages.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\git.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\hello-world.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\library-kohana.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\sharing-kohana.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\tutorials\simple-mvc.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\guide\kohana\upgrading.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\i18n\en.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\i18n\es.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\i18n\fr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\media\guide\kohana\cascading_filesystem.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\media\guide\kohana\hello_world_1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\media\guide\kohana\hello_world_2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\media\guide\kohana\hello_world_2_error.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\media\guide\kohana\install.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\media\guide\kohana\welcome.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\messages\tests\validation\error_type_check.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\messages\validation.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ArrTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ConfigTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\Config\File\ReaderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\Config\GroupTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\CookieTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\CoreTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\DateTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\DebugTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ExceptionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\FeedTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\FileTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\FormTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\HTMLTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\HTTPTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\Http\HeaderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\I18nTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\InflectorTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\LogTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ModelTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\NumTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\RequestTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ResponseTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\RouteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\SecurityTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\SessionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\TextTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\URLTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\UTF8Test.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\UploadTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ValidTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ValidationTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\ViewTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\request\ClientTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\request\client\ExternalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\kohana\request\client\InternalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\test_data\callback_routes.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\test_data\github.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\tests\test_data\views\test.css.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\from_unicode.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\ltrim.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\ord.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\rtrim.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\str_ireplace.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\str_pad.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\str_split.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strcasecmp.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strcspn.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\stristr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strlen.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strpos.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strrev.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strrpos.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strspn.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strtolower.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\strtoupper.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\substr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\substr_replace.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\to_unicode.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\transliterate_to_ascii.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\trim.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\ucfirst.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\utf8\ucwords.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\views\kohana\error.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\views\kohana\generate_logo.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\views\kohana\logo.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\views\profiler\stats.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\WebServers\home\chat\www\system\views\profiler\style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    </list>
+    <ignored path="www.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="www" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="28" selection-start="525" selection-end="525" vertical-scroll-proportion="0.38" vertical-offset="0" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat_server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/chat_server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="27" selection-start="277" selection-end="288" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="731">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/js/chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="191" column="40" selection-start="5454" selection-end="5454" vertical-scroll-proportion="0.0" vertical-offset="2992" max-vertical-offset="3944">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat_ui.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/js/chat_ui.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/project/js/chat_ui.js" />
+        <option value="$PROJECT_DIR$/project/css/style.css" />
+        <option value="$PROJECT_DIR$/lib/chat_server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/project/index.html" />
+        <option value="$PROJECT_DIR$/project/js/chat.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="38" />
+    <option name="width" value="1260" />
+    <option name="height" value="984" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WebServers\home\chat\www\project\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcc1a427-b36b-4819-b1ad-6eed7ed52faa" name="Default" comment="" />
+      <created>1402491350690</created>
+      <updated>1402491350690</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="38" y="0" width="1260" height="984" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chat_server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="277" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="493">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat_ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chat_server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="442">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat_ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="31" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chat_server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="442">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="20" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat_ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat_ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="235" selection-end="235" vertical-scroll-proportion="0.5336323" vertical-offset="0" max-vertical-offset="493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chat_server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="277" selection-end="288" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="731">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="40" selection-start="5454" selection-end="5454" vertical-scroll-proportion="0.0" vertical-offset="2992" max-vertical-offset="3944">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="28" selection-start="525" selection-end="525" vertical-scroll-proportion="0.38" vertical-offset="0" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
