@@ -31,4 +31,9 @@ io.on('connection', function(socket){
         console.log("remoutFirstSett");
         socket.broadcast.emit('remoutFirstSett', {remoutFirstSett : data});
     });
+    socket.on('redrawImage', function(data){
+        console.log("redrawImage");
+        socket.broadcast.emit('redrawImage', {redrawImage : data});
+    });
+
 });

@@ -196,32 +196,57 @@ function handleFileSelect(evt){
 
 function saveImageFunction(path, data){
     var fullPath = location.href + "/" + path;
-    var save_img = localStorage.getItem(fullPath);
-    var save_img_arr = [];
-    if(save_img != undefined && !isNull(save_img)){
-        save_img_arr = JSON.parse(save_img);
-    }
-    save_img_arr[saveStepsNumber] = data;
+    if(path == "clear"){
+        localStorage.setItem(fullPath, document.getElementById("test_canvas").toDataURL());
+    }else{
+        var save_img = localStorage.getItem(fullPath);
+        var save_img_arr = [];
+        if(save_img != undefined && !isNull(save_img)){
+            save_img_arr = JSON.parse(save_img);
+        }
+        save_img_arr[saveStepsNumber] = data;
 
-    currentSaveStep++;
-    saveStepsNumber++;
-    if(saveStepsNumber > countSaves){
-        saveStepsNumber = 0;
+        currentSaveStep++;
+        saveStepsNumber++;
+        if(saveStepsNumber > countSaves){
+            saveStepsNumber = 0;
+        }
+        localStorage.setItem(fullPath, JSON.stringify(save_img_arr));
     }
-    localStorage.setItem(fullPath, JSON.stringify(save_img_arr));
 }
 
 function getSaveImg(path, isBackOrAhead){
     var fullPath = location.href + "/" + path;
-    var save_img = localStorage.getItem(fullPath);
-    if(save_img == undefined ||  isNull(save_img)){
-        return -1;
+    if(path == "clear"){
+        var img = localStorage.getItem(fullPath);
+        if(img != undefined && img != null){
+            return img;
+        }
+        else{
+            return -1;
+        }
+    }else{
+        var save_img = localStorage.getItem(fullPath);
+        if(save_img == undefined ||  save_img == null){
+            return -1;
+        }
+        var save_img_arr = []
+        save_img_arr = JSON.parse(save_img);
+        var res = save_img_arr[currentSaveStep];
+        currentSaveStep--;
     }
-    var save_img_arr = []
-    save_img_arr = JSON.parse(save_img);
-    var res = save_img_arr[currentSaveStep];
-    currentSaveStep--;
+}
 
+document.getElementById("ClearImage").addEventListener("click", redrawImage);
+function redrawImage(sendOther){
+    var im = getSaveImg("clear");
+    if(im != -1){
+        drawMage(im);
+        if(sendOther === 1){}
+        else{
+            sendSocket("redrawImage", "test");
+        }
+    }
 }
 
 function drawMage(src){
@@ -239,14 +264,15 @@ function drawMage(src){
     console.dir(window.canvas);
     pic.onload = function(){
         ctx.drawImage(pic, 0, 0, pic.width, pic.height);
+        saveImageFunction("clear");
     }
 
 }
 
 document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
-//var socket = io.connect('http://watchittogether:9091');
-var socket = io.connect('http://talk.we22.ru:9091');
+var socket = io.connect('http://disscussittogether:9091');
+//var socket = io.connect('http://talk.we22.ru:9091');
 socket.on('hello', function (data) {
     console.log(data);
 });
@@ -300,5 +326,9 @@ socket.on("remoutFirstSett", function(data){
     console.info("remoutFirstSett");
     isFirst = false;
     drawMage(data.remoutFirstSett.src);
+});
+
+socket.on("redrawImage", function(data){
+    redrawImage(1);
 });
 
