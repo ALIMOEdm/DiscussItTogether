@@ -11,6 +11,8 @@ var isClose = false, isStart = false;;
 var isFirst = true;
 var curMiniImageWr;
 
+var noteX, noteY;
+localStorage.clear();
 
 var countSaves = 10, currentSaveStep = 0, saveStepsNumber = 0;//количество возможных сохранений, текущее сохранение, количество сделанных сохранений
 
@@ -61,6 +63,7 @@ document.getElementById("LineTest").onclick = function(){
     document.getElementById("test_canvas").onmousedown = mousedown_Line;
     document.getElementById("test_canvas").onmouseup = mouseup_Line;
     document.getElementById("test_canvas").onmousemove = mousemove_Line;
+    document.getElementById("test_canvas").onclick = '';
 };
 
 //обработчики для рисования линий
@@ -144,6 +147,7 @@ document.getElementById("RectTest").onclick = function(){
     document.getElementById("test_canvas").onmousedown = mousedown_Rect;
     document.getElementById("test_canvas").onmouseup = mouseup_Rect;
     document.getElementById("test_canvas").onmousemove = '';
+    document.getElementById("test_canvas").onclick = '';
 }
 
 function mousedown_Rect(event){
@@ -165,6 +169,88 @@ function mouseup_Rect(event){
         color : window.def_color
     }
     socket.emit('drawRect', transfer_date);
+}
+
+//создание коментария
+document.getElementById("TextTest").addEventListener("click", function(){
+    document.getElementById("test_canvas").onmousedown = "";
+    document.getElementById("test_canvas").onmouseup = "";
+    document.getElementById("test_canvas").onmousemove = "";
+    document.getElementById("test_canvas").onclick = mouseclick_Text;
+});
+
+function mouseclick_Text(event){
+    jQuery("#addNewNote_noteText").val("");
+    noteX = event.offsetX; noteY = event.offsetY;
+    document.querySelector("#addNewNote_Header").innerHTML = "Новая пометка";
+    document.querySelector("#addNewNote_CloseBtn").innerHTML = "Отмена";
+    document.querySelector("#addNewNote_AddBtn").innerHTML = "Добавить";
+    jQuery("#addNewNote").modal("show");
+}
+
+function addNewNote(){
+    var textAr = jQuery("#addNewNote_noteText");
+    if(!textAr.val()){
+        return;
+    }
+    var notetext = textAr.val();
+    var div = document.createElement("DIV");
+    if(window.def_color.charAt(0) == "#"){
+        div.style.backgroundColor = window.def_color;
+    }else{
+        div.style.backgroundColor = "#" + window.def_color;
+    }
+    div.style.position = "absolute";
+    div.style.top = noteY + "px";
+    div.style.left = noteX + "px";
+    var id1 = getRandom();
+    var id2 = getRandom();
+    var id3 = getRandom();
+    var id = "8" + id1.toString().substr(2, id1.length) + "-" + id2.toString().substr(2, id2.length) + "-" + id3.toString().substr(2, id3.length);
+    var button = '<button oncontextmenu="contextMenu(); return false;" type="button" id='+id+' class="btn btn-default context-menu-one box menu-1" data-container="body" data-toggle="popover" data-placement="left" data-content="'+notetext+"<button><i class='fa fa-trash-o'></i></button>"+'"><i class="fa fa-paragraph"></i></button>';
+    div.innerHTML = button;
+    document.getElementById("content_canvas_wr").appendChild(div);
+    jQuery('#'+id).popover('hide');
+
+    var ob = {};
+    ob.notetext = notetext;
+    ob.noteY = noteY;
+    ob.noteX = noteX;
+    ob.id = id;
+
+    sendSocket("newNote", ob);
+
+    saveNoteF(ob);
+
+    jQuery("#addNewNote").modal("hide");
+}
+
+jQuery(function(){
+    $.contextMenu({
+        selector: '.context-menu-one',
+        callback: function(key, options) {
+            //console.dir(this[0]);
+            var button = this[0];
+            var m = "clicked: " + key;
+            switch("key"){
+                case "edit":
+                    break;
+                case "delete":
+                    break;
+
+            }
+        },
+        items: {
+            "edit": {name: "Edit", icon: "edit", accesskey: "e"},
+            "delete": {name: "Delete", icon: "delete"}
+        }
+    });
+});
+
+
+function contextMenu(){}
+function getRandom() {
+    return Math.random();
 }
 
 function changeImage(event){
@@ -198,7 +284,8 @@ function saveImageFunction(path, data){
     var fullPath = location.href + "/" + path;
     if(path == "clear"){
         localStorage.setItem(fullPath, document.getElementById("test_canvas").toDataURL());
-    }else{
+    }
+    else{
         var save_img = localStorage.getItem(fullPath);
         var save_img_arr = [];
         if(save_img != undefined && !isNull(save_img)){
@@ -237,6 +324,31 @@ function getSaveImg(path, isBackOrAhead){
     }
 }
 
+
+function saveNoteF(params){
+    var fullPath = location.href + "/" + "saveNotesId";
+    var notes = localStorage.getItem(fullPath);
+    var n = [];
+    if(notes != undefined && notes != null){
+        n = JSON.parse(notes);
+        n.push(params);
+    }
+    else{
+        n.push(params);
+    }
+
+    localStorage.setItem(fullPath, JSON.stringify(n));
+}
+
+function getNoteF(){
+    var fullPath = location.href + "/" + "saveNotesId";
+    var notes = localStorage.getItem(fullPath);
+    if(notes != undefined && notes != null){
+        return JSON.parse(notes);
+    }
+    return -1;
+}
+
 document.getElementById("ClearImage").addEventListener("click", redrawImage);
 function redrawImage(sendOther){
     var im = getSaveImg("clear");
@@ -272,7 +384,26 @@ function drawMage(src){
 document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
 //var socket = io.connect('http://disscussittogether:9091');
-var socket = io.connect('http://talk.we22.ru:9091');
+//var socket = io.connect('http://talk.we22.ru:9091');
+var socket = io.connect(window.hostt);
+
+var cur_room = "";
+var params = location.search;
+var param_arr = params.split("&");
+if(param_arr.length){
+    console.log(param_arr);
+    for(var i = 0; i < param_arr.length; i++){
+        var par = param_arr[i].split("=");
+        if(par[0] == "room" || par[0] == "?room"){
+            cur_room = par[1];
+        }
+    }
+}
+var ob = {
+    room : cur_room
+}
+
+sendSocket("room", ob);
 socket.on('hello', function (data) {
     console.log(data);
 });
@@ -285,7 +416,15 @@ socket.on("findOther", function(data){
     console.log(data, isFirst, "findOther");
     if(isFirst){
         if(window.ctx != undefined && data.find_other.act == "find"){
-            sendSocket("remoutFirstSett", {src : document.getElementById("test_canvas").toDataURL()})
+            sendSocket("remoutFirstSett", {src : document.getElementById("test_canvas").toDataURL()});
+
+            var notes = getNoteF();
+            console.log("findOther", notes);
+            if(notes != -1){
+                for(var i = 0; i < notes.length; i++){
+                    sendSocket("newNote", notes[i]);
+                }
+            }
         }
     }
 });
@@ -332,3 +471,15 @@ socket.on("redrawImage", function(data){
     redrawImage(1);
 });
 
+socket.on("newNote", function(data){
+    var note = data.newNote;
+    console.log(note);
+    var div = document.createElement("DIV");
+    div.style.position = "absolute";
+    div.style.top = note.noteY + "px";
+    div.style.left = note.noteX + "px";
+    var button = '<button oncontextmenu="contextMenu(); return false;" type="button" id='+note.id+' class="btn btn-default  context-menu-one box menu-1" data-container="body" data-toggle="popover" data-placement="left" data-content="'+note.notetext+'"><i class="fa fa-paragraph"></i></button>';
+    div.innerHTML = button;
+    document.getElementById("content_canvas_wr").appendChild(div);
+    jQuery('#'+note.id).popover('hide');
+});
