@@ -5,6 +5,12 @@ var rect = [];
 var x1, y1;
 var moveX1, moveY1;
 var def_color = "FFFF00";
+var col_el = document.getElementById("colorSelector");
+if(col_el != undefined){
+    try{
+        def_color = col_el.value;
+    }catch(e){}
+}
 
 var mouseDown = false, mouseUp = false, mouseMove = false;
 var isClose = false, isStart = false;;

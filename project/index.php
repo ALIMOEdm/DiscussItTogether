@@ -68,7 +68,7 @@ if(isset($_GET["room"]) && !empty($_GET["room"])){
 
     <div  class="work_panel-changecolor" id="color_panel" style="margin: 10px 2px;">
         <form role="form" onsubmit="return false;">
-            <input onchange="setColor(this)" class="form-control" type="color" name="bg" value="#ff0000">
+            <input id="colorSelector" onchange="setColor(this)" class="form-control" type="color" name="bg" value="#ff0000">
         </form>
     </div>
 
