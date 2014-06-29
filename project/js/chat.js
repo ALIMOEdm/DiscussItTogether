@@ -375,6 +375,8 @@ function getNoteF(){
     return -1;
 }
 
+
+
 document.getElementById("ClearImage").addEventListener("click", redrawImage);
 function redrawImage(sendOther){
     var im = getSaveImg("clear");
@@ -404,6 +406,7 @@ function drawMage(src){
         ctx.drawImage(pic, 0, 0, pic.width, pic.height);
         saveImageFunction("clear");
     }
+    removeAllNote();
 
 }
 
@@ -459,6 +462,7 @@ socket.on("findOther", function(data){
 
 socket.on('image', function(data){
     drawMage(data.data);
+    removeAllNote();
 });
 
 socket.on('drawRect', function(data){

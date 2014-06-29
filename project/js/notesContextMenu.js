@@ -110,3 +110,14 @@ function removeNote(id){
     notes.splice(ind, 1);
     saveAllData(notes);
 }
+
+function removeAllNote(){
+    var notes = getNoteF();
+    forEach(notes, function(el){
+        var id = el.id;
+        jQuery('#'+id).popover('hide');
+        document.getElementById(id).parentNode.removeChild(document.getElementById(id));
+        var o = [];
+        saveAllData(o);
+    });
+}
