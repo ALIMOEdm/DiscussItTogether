@@ -136,6 +136,7 @@ function mousemove_Line(event){
 }
 
 function sendSocket(typeMess, data){
+    console.info("sendSocket", ">", typeMess);
     socket.emit(typeMess, data);
 }
 
@@ -189,11 +190,57 @@ function mouseclick_Text(event){
 }
 
 function addNewNote(){
-    var textAr = jQuery("#addNewNote_noteText");
-    if(!textAr.val()){
+//    var textAr = jQuery("#addNewNote_noteText");
+//    if(!textAr.val()){
+//        return;
+//    }
+//    var notetext = textAr.val();
+//    var div = document.createElement("DIV");
+//    if(window.def_color.charAt(0) == "#"){
+//        div.style.backgroundColor = window.def_color;
+//    }else{
+//        div.style.backgroundColor = "#" + window.def_color;
+//    }
+//    div.style.position = "absolute";
+//    div.style.top = noteY + "px";
+//    div.style.left = noteX + "px";
+//    var id1 = getRandom();
+//    var id2 = getRandom();
+//    var id3 = getRandom();
+//    var id = "8" + id1.toString().substr(2, id1.length) + "-" + id2.toString().substr(2, id2.length) + "-" + id3.toString().substr(2, id3.length);
+//    var button = '<button oncontextmenu="contextMenu(); return false;" type="button" id='+id+' class="btn btn-default context-menu-one box menu-1" data-container="body" data-toggle="popover" data-placement="left" data-content="'+notetext+"<button><i class='fa fa-trash-o'></i></button>"+'"><i class="fa fa-paragraph"></i></button>';
+//    div.innerHTML = button;
+//    document.getElementById("content_canvas_wr").appendChild(div);
+//    jQuery('#'+id).popover('hide');
+
+    var ret = addNote();
+    if(!ret)
         return;
+
+    var ob = {};
+    ob.notetext = ret.noteT;
+    ob.noteY = noteY;
+    ob.noteX = noteX;
+    ob.id = ret.id;
+
+    sendSocket("newNote", ob);
+
+    saveNoteF(ob);
+
+    jQuery("#addNewNote").modal("hide");
+}
+
+function addNote(id, text){
+    if(text != undefined){
+        var notetext = text;
+    }else{
+        var textAr = jQuery("#addNewNote_noteText");
+        if(!textAr.val()){
+            return 0;
+        }
+        var notetext = textAr.val();
     }
-    var notetext = textAr.val();
+
     var div = document.createElement("DIV");
     if(window.def_color.charAt(0) == "#"){
         div.style.backgroundColor = window.def_color;
@@ -206,46 +253,20 @@ function addNewNote(){
     var id1 = getRandom();
     var id2 = getRandom();
     var id3 = getRandom();
-    var id = "8" + id1.toString().substr(2, id1.length) + "-" + id2.toString().substr(2, id2.length) + "-" + id3.toString().substr(2, id3.length);
-    var button = '<button oncontextmenu="contextMenu(); return false;" type="button" id='+id+' class="btn btn-default context-menu-one box menu-1" data-container="body" data-toggle="popover" data-placement="left" data-content="'+notetext+"<button><i class='fa fa-trash-o'></i></button>"+'"><i class="fa fa-paragraph"></i></button>';
+    if(id == undefined)
+        id = "8" + id1.toString().substr(2, id1.length) + "-" + id2.toString().substr(2, id2.length) + "-" + id3.toString().substr(2, id3.length);
+    var button = '<button oncontextmenu="contextMenu(); return false;" type="button" id='+id+' class="btn btn-default context-menu-one box menu-1" data-container="body" data-toggle="popover" data-placement="left" data-content="'+notetext+'"><i class="fa fa-paragraph"></i></button>';
     div.innerHTML = button;
+    console.log("addNote");
     document.getElementById("content_canvas_wr").appendChild(div);
     jQuery('#'+id).popover('hide');
 
-    var ob = {};
-    ob.notetext = notetext;
-    ob.noteY = noteY;
-    ob.noteX = noteX;
-    ob.id = id;
-
-    sendSocket("newNote", ob);
-
-    saveNoteF(ob);
-
-    jQuery("#addNewNote").modal("hide");
+    var ret = {
+        noteT : notetext,
+        id : id
+    }
+    return ret;
 }
-
-jQuery(function(){
-    $.contextMenu({
-        selector: '.context-menu-one',
-        callback: function(key, options) {
-            //console.dir(this[0]);
-            var button = this[0];
-            var m = "clicked: " + key;
-            switch("key"){
-                case "edit":
-                    break;
-                case "delete":
-                    break;
-
-            }
-        },
-        items: {
-            "edit": {name: "Edit", icon: "edit", accesskey: "e"},
-            "delete": {name: "Delete", icon: "delete"}
-        }
-    });
-});
 
 
 function contextMenu(){}
@@ -340,6 +361,11 @@ function saveNoteF(params){
     localStorage.setItem(fullPath, JSON.stringify(n));
 }
 
+function saveAllData(n){
+    var fullPath = location.href + "/" + "saveNotesId";
+    localStorage.setItem(fullPath, JSON.stringify(n));
+}
+
 function getNoteF(){
     var fullPath = location.href + "/" + "saveNotesId";
     var notes = localStorage.getItem(fullPath);
@@ -414,7 +440,7 @@ sendSocket("findOther", find_ob);
 
 socket.on("findOther", function(data){
     console.log(data, isFirst, "findOther");
-    if(isFirst){
+    //if(isFirst){
         if(window.ctx != undefined && data.find_other.act == "find"){
             sendSocket("remoutFirstSett", {src : document.getElementById("test_canvas").toDataURL()});
 
@@ -425,12 +451,14 @@ socket.on("findOther", function(data){
                     sendSocket("newNote", notes[i]);
                 }
             }
+        }else{
+            sendSocket("findOther", find_ob);
         }
-    }
+   // }
 });
 
 socket.on('image', function(data){
-    drawMage(data.data)
+    drawMage(data.data);
 });
 
 socket.on('drawRect', function(data){
@@ -448,6 +476,7 @@ socket.on("drowPometki", function(data){
             if(c.act == "start"){
                 window.ctx.beginPath();
             }
+            window.ctx.beginPath();
             window.ctx.lineWidth = c.lineWidth;
             window.ctx.strokeStyle = c.color;
 
@@ -473,7 +502,7 @@ socket.on("redrawImage", function(data){
 
 socket.on("newNote", function(data){
     var note = data.newNote;
-    console.log(note);
+    console.log("newNote");
     var div = document.createElement("DIV");
     div.style.position = "absolute";
     div.style.top = note.noteY + "px";
@@ -482,4 +511,49 @@ socket.on("newNote", function(data){
     div.innerHTML = button;
     document.getElementById("content_canvas_wr").appendChild(div);
     jQuery('#'+note.id).popover('hide');
+
+    var ob = {};
+    ob.notetext = note.notetext;
+    ob.noteY = note.noteY;
+    ob.noteX = note.noteX;
+    ob.id = note.id;
+    saveNoteF(ob);
+
+});
+
+socket.on("removeNote", function(data){
+    var note = data.remNote;
+    console.info("removeNote");
+    removeNote(note.id);
+});
+
+socket.on("editNote", function(data){
+    var note = data.edNote;
+    console.info("editNote");
+    var notes = getNoteF();
+    var id = note.id;
+
+    jQuery('#'+id).popover('hide');
+    document.getElementById(id).parentNode.parentNode.removeChild(document.getElementById(id).parentNode);
+    var ind = 0;
+    var ob = {};
+    for(var i = 0; i < notes.length; i++){
+        if(notes[i].id == id){
+            ind = i;
+            ob.notetext = note.notetext;
+            ob.id = note.id;
+            ob.noteY = notes[i].noteY;
+            ob.noteX = notes[i].noteX;
+            break;
+        }
+    }
+    window.noteY = ob.noteY;
+    window.noteX = ob.noteX;
+    addNote(id, note.notetext);
+
+    notes.splice(ind, 1);
+    notes.push(ob);
+    saveAllData(notes);
+
+    jQuery('#'+id).popover('show');
 });

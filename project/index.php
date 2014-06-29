@@ -1,4 +1,5 @@
 <?php
+session_start();
 $host_without_port = 'http://'.$_SERVER["SERVER_NAME"];
 $host = 'http://'.$_SERVER["SERVER_NAME"].':9091';
 $get_param = "";
@@ -83,18 +84,14 @@ if(isset($_GET["room"]) && !empty($_GET["room"])){
 </script>
 <script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'></script>
 <script>
-    $.ajax({
-        type:"post",
-        url:"temp.php",
-        success:function(data){
-        }
-    });
+
 </script>>
 <script src="js/jquery.ui.position.js" type="text/javascript"></script>
 <script src="js/jquery.contextMenu.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/socket.io.js"></script>
 <script src='js/chat.js' type='text/javascript'></script>
+<script src='js/notesContextMenu.js' type='text/javascript'></script>
 <script src='js/chat_ui.js' type='text/javascript'></script>
 
 
